@@ -26,6 +26,12 @@ pipeline {
                 sh 'cd eks && terraform validate'
             }
         }
+
+        stage('Plan Terraform') {
+            steps{
+                sh 'cd eks && terraform plan'
+            }
+        }
       
         stage('Creating/Destroying EKS Cluster') {
             steps{
