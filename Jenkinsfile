@@ -32,8 +32,7 @@ pipeline {
                 script{
                     dir('eks') {
                         sh 'aws eks update-kubeconfig --name my-eks-cluster'
-                        sh 'kubectl apply -f deployment.yaml'
-                        sh 'kubectl apply -f service.yaml'
+                        sh 'kubectl apply -f deployment-service.yaml'
                     }
                 }
             }
