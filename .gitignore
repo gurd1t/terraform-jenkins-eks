@@ -1,9 +1,5 @@
 jenkins/.terraform/*
 jenkins/.terraform.lock.hcl
-jenkins/terraform.tfstate
-jenkins/terraform.tfstate.backup
 
 eks/.terraform/*
 eks/.terraform.lock.hcl
-eks/terraform.tfstate
-eks/terraform.tfstate.backup
